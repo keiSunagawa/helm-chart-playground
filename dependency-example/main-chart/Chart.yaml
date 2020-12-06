@@ -1,0 +1,18 @@
+apiVersion: v2
+name: main-chart
+type: application
+version: 0.1.0
+dependencies:
+- name: sub-chart-1
+  version: "0.1.0"
+  repository: "file://../sub-chart-1"
+  condition: subChart1.enabled
+- name: sub-chart-2
+  version: "0.1.0"
+  repository: "file://../sub-chart-2"
+  tags:
+  - subChart2
+- name: sub-chart-3
+  version: "0.1.0"
+  repository: "file://../sub-chart-3"
+  condition: subChart3.enabled,subChart3.dev

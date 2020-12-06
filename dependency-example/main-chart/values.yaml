@@ -1,0 +1,9 @@
+subChart1:
+  enabled: true
+
+tags:
+  subChart2: true
+
+subChart3:
+  # enabled: true
+  dev: true
